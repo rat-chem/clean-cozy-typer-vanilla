@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root {
+  --theme-1-background-1  : #24283B;
+  --theme-1-background-2  : #333954;
+  --theme-1-green         : #45F1C2;
+  --theme-1-blue          : #0CA0D8;
+  --theme-1-cyan          : #14A5AE;
+  --theme-1-orange        : #cd5e42;
+  --theme-1-red           : #CD4277;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.1rem;
+  background-color: var(--theme-1-background-1);
+  color: white;
+}
+
+.header {
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+
+.quote-wrapper {
+  max-width: 35%;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.quote-element {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input {
+  all: unset;
+  color: white;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: hsl(227,15%,24%);
+  background-color: var(--theme-1-background-1);
+  text-align: left;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid white;
+}
+
+.refresh {
+  all: unset;
+  /*padding: 0.5rem;*/
+  /*padding-left: 0.5rem;*/
+  /*padding-right: 0.5rem;*/
+  margin-left: 3rem;
+  background-color: hsl(227,15%,24%);
+  color: white;
+  background-color: var(--theme-1-background-1);
+}
+
+.refresh:hover {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid var(--theme-1-orange);
+}
+
+.refresh:focus {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid var(--theme-1-orange);
+}
+
+.statistics {
+  width: 50%;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.keyboard-wrapper {
+  width: 75%;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+}
+
+.pressed-key {
+  color: var(--theme-1-background-1);
+  background-color: white;
+}
+
+.default-key {
+  font-size: 1rem;
+  width: 2rem;
+  margin-left: .25rem;
+  margin-right: .25rem;
+  margin-bottom: .2rem;
+  padding: .5rem;
+  border-radius: 2px;
+  transition: 25ms;
+}
+
+.spacebar {
+  width: 20rem;
+}
+
+.shift {
+  width: 7.25rem;
+}
+
+.tab {
+  width: 3rem;
+}
+
+.enter {
+  width: 6rem;
+}
+
+.caps {
+  width: 5rem;
+}
+
+.backspace {
+  width: 6rem;
+}
+
+.word {
+  margin-right: 0.5rem;
+}
+
+.correct-word {
+  color: var(--theme-1-green);
+}
+
+.incorrect-word {
+  color: var(--theme-1-red);
+}
+
+.current-word {
+  color: var(--theme-1-blue);
+}
+

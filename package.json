@@ -1,0 +1,27 @@
+{
+  "name": "practice-vanilla-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run app && npm-run-all --parallel watch serve",
+    "app": "webpack",
+    "watch": "webpack --watch",
+    "serve": "cd dist && live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.8",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "webpack-cli": "^4.9.2"
+  }
+}
